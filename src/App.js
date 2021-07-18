@@ -2,7 +2,7 @@
  * @Description: 
  * @Autor: Blueheart
  * @Date: 2021-07-17 23:10:36
- * @LastEditTime: 2021-07-18 21:29:39
+ * @LastEditTime: 2021-07-18 21:40:37
  * @FilePath: \react-hook\src\App.js
  */
 
@@ -82,7 +82,7 @@ function App() {
 
       {/* form module */}
       <div className="p-10">
-        <form>
+        <form className="space-x-4">
           <input className="w-1/2 h-10 rounded-lg border-2 border-blue-500 space-x-4"
             type="text" value={name} placeholder="Input names" onChange={(e) => setName(e.target.value)}
           />
@@ -93,9 +93,7 @@ function App() {
           <ul>
             {names.map((item) => (
               <li key={item.id}>{item.name}</li>
-            )
-
-            )}
+            ))}
           </ul>
         </div>
 
